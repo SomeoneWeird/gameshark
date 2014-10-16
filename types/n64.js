@@ -158,10 +158,10 @@ var decryptCode = function decryptCode(code) {
 
     /* A0 */ bytes[0] = (bytes[0] ^ 0x68);
     /* A1 */ bytes[1] = (bytes[1] + 0x2B) ^ 0x81;
-    /* A2 */ bytes[2] = (bytes[2] + 0x82) ^ 0x82;
-    /* A3 */ bytes[3] = (bytes[3] + 0x83) ^ 0x83;
-    /* D0 */ bytes[4] = (bytes[4] + 0x84) ^ 0x84;
-    /* D1 */ bytes[5] = (bytes[5] + 0x85) ^ 0x85;
+    /* A2 */ bytes[2] = (bytes[2] + 0x2B) ^ 0x82;
+    /* A3 */ bytes[3] = (bytes[3] + 0x2B) ^ 0x83;
+    /* D0 */ bytes[4] = (bytes[4] + 0x2B) ^ 0x84;
+    /* D1 */ bytes[5] = (bytes[5] + 0x2B) ^ 0x85;
 
     return bytes.map(utils.toHex).join("");  
 
